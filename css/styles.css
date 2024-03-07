@@ -10,6 +10,7 @@
     --icon-social:#2196f3;
     --icon-logo: #8E8F99;
     --icon-group: #2E2F42;
+    --icon-color:#f5f0f0;
   }
   
   *,
@@ -355,23 +356,23 @@ margin-left:156;
 }
 
 .section-4 .icon-group {
-  width: 2680px;
-  height:156px;
+  width: 680px;
+  height:56px;
 }
 
 .icon-group .group-logo {
-  background-color: rgba(255, 255, 255, 0.6);
+  color: var(--icon-group);
   width: 88px;
   height:168px;
   display: flex;
   justify-content: center;
   align-content: center;
-  color: rgba(88, 85, 85, 0.6);
+  color: var(--icon-group);
   border-radius: 50%;
 }
 
 .group-logo {
-  color: rgba(88, 85, 85, 0.6);
+  color: var(--icon-group);
 }
   
 
@@ -439,7 +440,7 @@ margin-left:156;
     .icons-list .icons {
       width:44px;
       height:44px;
-      background-color: var(--white-color);
+      color: var(--white-color);
       border-radius: 50%;
       display: flex;
       justify-content: center;
@@ -508,6 +509,20 @@ margin-left:156;
     font-weight: 500;
     color: var(--text-color);
   }
+
+  .icon-mail,
+  .icon-phone {
+   color: var(--icon-mail-and-phone-color);
+   display: flex;
+   justify-items: end;
+   align-items: end;
+   gap:10px;
+  }
+
+  .icon-mail .icon-phone:hover {
+    color:var(--icon-mail-and-phone-color);
+  }
+
   
   .logo-anchor:hover,
   .logo-anchor:focus {
