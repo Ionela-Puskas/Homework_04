@@ -6,11 +6,6 @@
     --hero-bg: #2f303a;
     --what-we-do-bg: #e5e5e5;
     --our-team-bg: #f5f4fa;
-    --icon-mail-and-phone-color: black;
-    --icon-social:#2196f3;
-    --icon-logo: #8E8F99;
-    --icon-group: #2E2F42;
-    --icon-color:#f5f0f0;
   }
   
   *,
@@ -84,6 +79,10 @@
     gap: 30px;
   }
   
+.icon-contact {
+  
+}
+
   .mail,
   .phone {
     letter-spacing: 0.02em;
@@ -91,21 +90,8 @@
     font-weight: 500;
     color: var(--text-color);
   }
-   
-  .icon-mail,
-  .icon-phone {
-   color: var(--icon-mail-and-phone-color);
-   display: flex;
-   justify-items: end;
-   align-items: end;
-   gap:10px;
-  }
-
-  .icon-mail .icon-phone:hover {
-    color:var(--icon-mail-and-phone-color);
-  }
   
-
+  
   .logo-anchor:hover,
   .logo-anchor:focus {
     color: var(--logo-and-hover-color);
@@ -146,6 +132,7 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    background: url(./images/people-office.png);
   }
 
   
@@ -192,33 +179,6 @@
     display: flex;
     gap: 22px;
   }
-  
-  .icon-list .icon {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  display: flex;
-  background-color: var(--links-color);
-  justify-content: center;
-  align-items: center;
-  color: var(--icon-logo);
-  }
-
-.icon {
-  background-color: var(--links-color);
-}
-
-  .icon-list {
-  color: var(--icon-logo);
-    margin-top:15px;
-    display:block;
-    justify-content: center;
-    gap:10px;
-    align-items: center;
-    margin-top:20px;
-  }
-
-  .icon-list .icon:hover,
 
   .description-title {
     font-weight: 700;
@@ -306,24 +266,6 @@
 }
 
 
-  .icons-list .icons {
-    width:44px;
-    height:44px;
-    background-color: var(--white-color);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--icon-social);
-  }
-
-  .icons-list .icons:hover {
-    color: var(--icon-social-hover);
-  }
-
-  .icons-list .icons:focus {
-    color: var(--icon-social);
-  }
 
 .section-4 {
 width:1128px;
@@ -361,18 +303,9 @@ margin-left:156;
 }
 
 .icon-group .group-logo {
-  color: var(--icon-group);
   width: 88px;
   height:168px;
   display: flex;
-  justify-content: center;
-  align-content: center;
-  color: var(--icon-group);
-  border-radius: 50%;
-}
-
-.group-logo {
-  color: var(--icon-group);
 }
   
 
@@ -423,7 +356,7 @@ margin-left:156;
   .social .titlu-social {
     width:96px;
     height:24px;
-    color:rgba(255, 255, 255, 0.6);
+    color:rgb(255, 255, 255);
     display:flex;
     justify-items: center;
     align-items: center;
@@ -437,26 +370,6 @@ margin-left:156;
     margin-top:10px;
   }
   
-    .icons-list .icons {
-      width:44px;
-      height:44px;
-      color: var(--white-color);
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: var(--icon-social);
-    }
-  
-    .icons-list .icons:hover,
-    .icon-list .icons:active {
-      color: var(--icon-social-hover);
-
-    }
-  
-    .icons-list .icons:focus {
-      color: var(--icon-social);
-    }
 
 
 
@@ -602,25 +515,24 @@ color: var(--icon-social-hover);
   flex-direction: column;
   align-items: center;
 }
-.container .app-card {
+.about-card {
   background-color: var(--white-color);
   text-align: center;
   border-radius: 1px;
   display: flex;
   gap:8px;
-  box-shadow:0px 1px 3px rgba(178, 170, 170, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(144, 138, 138, 0.2);
-}
-.app-card .card-1 .card-2 .card-3 {
-  width: 56px;
-  height:360px;
-  margin-top: 332px;
-  padding:0px 16px 0px 16px;
+  box-shadow:0px 1px 3px rgba(156, 156, 156, 0.14), 0px 1px 1px rgba(156, 156, 156, 0.14),
+  0px 2px 1px rgba(156, 156, 156, 0.14);
 }
 
-.app-card:hover,
-.app-card:focus {
-  color: var(--logo-and-hover-color);
+.card-image {
+  width:360px;
+  margin-bottom: 56px;
+}
+
+.app-card {
+  display: center;
+  gap:23px;
 }
 
 .title-app {
@@ -648,19 +560,25 @@ color: var(--icon-social-hover);
   flex-direction: column;
   align-items: center;
 }
-.container .app-card {
+.about-card {
   background-color: var(--white-color);
   text-align: center;
   border-radius: 1px;
   display: flex;
   gap:8px;
 }
-.app-card .card-1 .card-2 .card-3 {
-  width: 56px;
-  height:360px;
-  margin-top: 716px;
-  padding:0px 16px 0px 16px;
+
+.card-image {
+  width: 360px;
+  margin-bottom: 56px; 
 }
+
+
+.app-card {
+width: 360px;
+gap:23px;
+}
+
 
 .title-app {
   color:var(--hero-bg);
@@ -687,18 +605,23 @@ color: var(--icon-social-hover);
   flex-direction: column;
   align-items: center;
 }
-.container .app-card {
+.card-about {
   background-color: var(--white-color);
   text-align: center;
   border-radius: 1px;
   display: flex;
   gap:8px;
 }
-.app-card .card-1 .card-2 .card-3 {
-  width: 56px;
-  height:360px;
-  margin-top: 1024px;
-  padding:0px 16px 0px 16px;
+
+.card-image {
+  width: 360px;
+  margin-bottom: 56px;
+}
+
+
+.app-card  {
+  width: 360px;
+  margin-bottom: 56px;
 }
 
 .title-app {
