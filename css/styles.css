@@ -79,9 +79,7 @@
     gap: 30px;
   }
   
-.icon-contact {
-  
-}
+
 
   .mail,
   .phone {
@@ -132,7 +130,7 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    background: url(./images/people-office.png);
+    background: url("./images/people-office.png");
   }
 
   
@@ -155,8 +153,7 @@
     width: fit-content;
     border: 1px solid var(--logo-and-hover-color);
     border-radius: 4px;
-    box-shadow: 0px 1px 3px rgba(178, 170, 170, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(144, 138, 138, 0.2);
+   
   }
   
   .hero-button:hover,
@@ -172,12 +169,12 @@
   
   .characteristics,
   .what-we-do {
-    background-color: var(--what-we-do-bg);
-  }
   
+    background-color: var(--)
+  }
   .characteristics ul {
     display: flex;
-    gap: 22px;
+    gap:22px;
   }
 
   .description-title {
@@ -217,7 +214,7 @@
   /* ------ our team section style ------ */
   
   .team-members {
-    background-color: var(--our-team-bg);
+    
   }
   
   .team-members .container {
@@ -227,10 +224,8 @@
   }
   
   .team-card {
-    background-color: var(--white-color);
+    
     text-align: center;
-    box-shadow: 0px 1px 3px rgba(178, 170, 170, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(144, 138, 138, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
   
@@ -491,8 +486,7 @@ margin-left:156;
   border-radius: 4px;
   border: 1px solid;
   padding: 12px 24px 12px 24px;
-  box-shadow:0px 1px 3px rgba(178, 170, 170, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(144, 138, 138, 0.2);
+ 
 }
 
 .button-active .button:hover,
@@ -521,8 +515,7 @@ color: var(--icon-social-hover);
   border-radius: 1px;
   display: flex;
   gap:8px;
-  box-shadow:0px 1px 3px rgba(156, 156, 156, 0.14), 0px 1px 1px rgba(156, 156, 156, 0.14),
-  0px 2px 1px rgba(156, 156, 156, 0.14);
+ 
 }
 
 .card-image {
@@ -704,16 +697,18 @@ gap:23px;
   margin-top:10px;
 }
 
-  .icons-list .icons {
+  .icons-list .icon {
+    color: red;
     width:44px;
     height:44px;
-    background-color: var(--icon-social);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--white-color);
+   background-color: #2196f3;
   }
+
+
 
   .icons-list .icons:hover,
   .icon-list .icons:active {
