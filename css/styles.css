@@ -206,12 +206,12 @@ height:20px;
   margin-top:20px;
   }
 
-.icon-list .icon svg {
+.icon-list .icon-group svg {
   width:64px;
   height:64px;
 }
 
-.icon-list .icon {
+.icon-list .icon-group {
 background-color: var(--white-color);
 width:264px;
 height:112px;
@@ -312,12 +312,12 @@ color: var(--links-color);
   .icons-list .icon {
     width: 44px;
     height: 44px;
-    background-color: var(--logo-and-hover-color);
+    background-color: var(--what-we-do-bg);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--white-color);
+    color: var(--links-color);
   }
   
   .icons-list .icon:hover,
@@ -454,12 +454,12 @@ color: var(--links-color);
   .icons-list .icon {
     width: 44px;
     height: 44px;
-    background-color: var(--logo-and-hover-color);
+    background-color: var(--icons-background);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--white-color);
+    color: var(--links-color);
   }
   
   .icons-list .icon:hover,
@@ -606,7 +606,7 @@ color: var(--links-color);
 
 .button-active .button:hover,
 .button-active .button:active {
-color: var(--icon-social-hover);
+color: var(--logo-and-hover-color);
 }
 
 .button-active .button:focus {
@@ -820,12 +820,12 @@ gap:23px;
 .icons-list .icon {
   width: 44px;
   height: 44px;
-  background-color: var(--logo-and-hover-color);
+  background-color: var(--icons-background);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--white-color);
+  color: var(--links-color);
 }
 
 .icons-list .icon:hover,
