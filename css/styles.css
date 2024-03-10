@@ -6,6 +6,8 @@
     --hero-bg: #2f303a;
     --what-we-do-bg: #e5e5e5;
     --our-team-bg: #f5f4fa;
+    --icons-background: #ffffff;
+    --icons-color: #303030;
   }
   
   *,
@@ -130,7 +132,8 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    background: url("./images/people-office.png");
+    background-image: linear-gradient(rgba(46,47,66,0.7) rgba(46,47,66,0.7)) url("../images/people-office.png");
+    background-size: cover;
   }
 
   
@@ -169,8 +172,7 @@
   
   .characteristics,
   .what-we-do {
-  
-    background-color: var(--)
+    background-color: var(--what-we-do-bg);
   }
   .characteristics ul {
     display: flex;
@@ -214,7 +216,7 @@
   /* ------ our team section style ------ */
   
   .team-members {
-    
+    background-color: var(--our-team-bg);
   }
   
   .team-members .container {
@@ -252,13 +254,38 @@
     line-height: 1.18;
     padding-bottom: 30px;
   }
+  .icons-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+  }
+  
+  .icons-list .icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .icons-list .icon {
+    width: 44px;
+    height: 44px;
+    background-color: var(--icons-background);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--icons-color);
+  }
+  
+  .icons-list .icon:hover,
+  .icons-list .icon:active {
+    color: var(--icons-color--hover);
+  }
+  
+  .icons-list .icon:focus {
+    color: var(--icons-color);
+  }
 
-.icons-list {
-  display: flex;
-  justify-content: center;
-  gap:10px;
-  margin-top:10px;
-}
 
 
 
@@ -361,8 +388,33 @@ margin-left:156;
   .icons-list {
     display: flex;
     justify-content: center;
-    gap:10px;
-    margin-top:10px;
+    gap: 10px;
+    margin-top: 30px;
+  }
+  
+  .icons-list .icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .icons-list .icon {
+    width: 44px;
+    height: 44px;
+    background-color: var(--icons-background);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--icons-color);
+  }
+  
+  .icons-list .icon:hover,
+  .icons-list .icon:active {
+    color: var(--icons-color--hover);
+  }
+  
+  .icons-list .icon:focus {
+    color: var(--icons-color);
   }
   
 
@@ -693,29 +745,33 @@ gap:23px;
 .icons-list {
   display: flex;
   justify-content: center;
-  gap:10px;
-  margin-top:10px;
+  gap: 10px;
+  margin-top: 30px;
 }
 
-  .icons-list .icon {
-    color: red;
-    width:44px;
-    height:44px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   background-color: #2196f3;
-  }
+.icons-list .icon svg {
+  width: 20px;
+  height: 20px;
+}
 
+.icons-list .icon {
+  width: 44px;
+  height: 44px;
+  background-color: var(--icons-background);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--icons-color);
+}
 
+.icons-list .icon:hover,
+.icons-list .icon:active {
+  color: var(--icons-color--hover);
+}
 
-  .icons-list .icons:hover,
-  .icon-list .icons:active {
-    color: var(--icon-social-hover);
-    
-  }
+.icons-list .icon:focus {
+  color: var(--icons-color);
+}
 
-  .icons-list .icons:focus {
-    color: var(--icon-social);
-  }
+  
