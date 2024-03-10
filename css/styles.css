@@ -8,6 +8,7 @@
     --our-team-bg: #f5f4fa;
     --icons-background: #ffffff;
     --icons-color: #303030;
+    -icons-color--hover: #ff6c00;
   }
   
   *,
@@ -312,12 +313,12 @@ color: var(--links-color);
   .icons-list .icon {
     width: 44px;
     height: 44px;
-    background-color: var(--what-we-do-bg);
+    background-color: var(--icons-background);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--links-color);
+    color: var(--icons-color);
   }
   
   .icons-list .icon:hover,
@@ -459,7 +460,7 @@ color: var(--links-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--links-color);
+    color: var(--icons-color);
   }
   
   .icons-list .icon:hover,
@@ -825,7 +826,7 @@ gap:23px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--links-color);
+  color: var(--icons-color);
 }
 
 .icons-list .icon:hover,
